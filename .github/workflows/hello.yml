@@ -2,10 +2,10 @@
 
 name: Hello World
 
-on: [workflow_dispatch]
+on: [push|pull_request]
 
 jobs:
   Say-Something:
     runs-on: ubuntu-latest
     steps:
-      - run: echo "Hello There!!!!"
+      - run: echo "Hello There!!!! Some new changes have been made. Now run on pr and push"
